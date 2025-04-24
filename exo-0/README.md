@@ -27,3 +27,4 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+En décommentant console.log(myVariable), un message d'erreur s'affiche parce que la variable n'a pas été délarées ( Uncaught REferenceError ).

@@ -1,38 +1,44 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
+<!DOCTYPE html> <!--balise qui indique et initialise le document en html-->
+<html> <!--balise ouvrante du document html-->
 
-        <h1>Exercice 0</h1>
+<head>
+    <!--balise ouvrante de la partie head du document html, la partie où l'on inscrit les données structurantes de notre document. -->
+    <meta charset="utf-8"> <!-- définit l'encodage du document-->
+</head> <!--balise fermant la partie head-->
 
-        <script type="text/javascript">
+<body><!-- ouverture du corps de notre page html-->
 
-        /* Section 1 */   
+    <h1>Exercice 0</h1><!--balises ouvrant et fermant un titre d'importance 1-->
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+    <script type="text/javascript"> /*initialisation de la partie JavaScript du fichier html*/
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        /* Section 1 */   /*commentaire en JavaScript*/
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        var name = "Joe";/*déclaration de variable avec type, nom, valeur de la variable */
+        var city = 'London';/*ici une variable qui contient le texte 'London*/
+        var age = 32;/*création d'une variable contentant le int '32'*/
+        var isRed = true; /*boolean*/
+        var isOld = age > 80; /* variable contenant une condition*/
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];/*un tableau de 3 string*/
+
+        function info(height, weight) {/*création d'une fonction nommée 'info' ayant pour paramètres 'height' et 'weigth'*/
+            if (height > 180) { /*première condition de la fonction*/
+                console.log('Vous êtes grand');/*exécution JavaScript dans la console pour cette condition, affichage du texte entre parenthèses */
             }
             if (weight < 0) {
                 console.log('oups, there is a problem');
-            } else if ( weight < 15) {
+            } else if (weight < 15) {
                 console.log('Are you that slim ?')
             } else {
                 console.log('Good !')
             }
         }
+        console.log('London');
+        console.log(name + ' est roux');
+        if (isRed = true) { console.log(name + ' est roux') }
 
-        info(165, 45);
+        info(165, 45);/*utilisation de la fonction info*/
 
         var myHeight = 175;
         var myWeight = 86;
@@ -47,8 +53,8 @@
 
         var upperName = toUpper(name);
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { /*Boucle pour parcourir les éléments du tableau ligne 23*/
+            console.log(previousJobs[i]);/*affiche dans la console des éléments du tableau 'previousJobs' déclaré ligne 23*/
         }
 
         /* Section 2: */
@@ -59,9 +65,10 @@
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
 
-        </script>
+    </script> <!--fermeture de la balise du JavaScript-->
 
-    </body>
+</body>
+
 </html>
